@@ -28,6 +28,26 @@
   color: #61dafb;
 }
 
+/* Add this CSS to your styles.css or equivalent */
+.popup-message {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #4CAF50; /* Green background for success */
+  color: white;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.popup-show {
+  transform: translateX(0);
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
