@@ -53,6 +53,7 @@ function FileUpload() {
       if (!uploadURL) {
         throw new Error("Upload URL is undefined in the response");
       }
+      console.log("fetttttch");
 
       const uploadResponse = await fetch(uploadURL, {
         method: "PUT",
@@ -61,6 +62,8 @@ function FileUpload() {
           "Content-Type": file.type,
         },
       });
+
+      console.log("fetttttch", uploadResponse);
 
       if (!uploadResponse.ok) {
         throw new Error(`Upload failed with status: ${uploadResponse.status}`);
